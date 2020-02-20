@@ -4,12 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
-    <StartupObject>FramerateTimestampConverter.WPF.App</StartupObject>
+    <StartupObject>FpsTimecodeConverter.App</StartupObject>
     <ApplicationIcon>Icon\RedHat.ico</ApplicationIcon>
-    <AssemblyName>FramerateTimestampConverter.WPF</AssemblyName>
+    <AssemblyName>FpsTimecodeConverter</AssemblyName>
     <Authors>TimeTravelPenguin</Authors>
-    <Product>FPSTimeStampConverter</Product>
-    <PackageId>FPSTimeStampConverter</PackageId>
+    <Product>FpsTimecodeConverter</Product>
+    <PackageId>FpsTimecodeConverter</PackageId>
     <PackageProjectUrl>https://github.com/TimeTravelPenguin/FpsTimecodeConverter</PackageProjectUrl>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace FramerateTimestampConverter.WPF
+namespace FpsTimecodeConverter
 {
   /// <summary>
   /// Interaction logic for App.xaml

@@ -2,10 +2,10 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
-using FramerateTimestampConverter.WPF.Models;
+using FpsTimecodeConverter.Models;
 using Microsoft.Expression.Interactivity.Core;
 
-namespace FramerateTimestampConverter.WPF.ViewModels
+namespace FpsTimecodeConverter.ViewModels
 {
   internal class MainAppViewModel
   {

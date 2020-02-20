@@ -2,9 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Windows;
-using FramerateTimestampConverter.WPF.Types;
+using FpsTimecodeConverter.Types;
 
-namespace FramerateTimestampConverter.WPF.Models
+namespace FpsTimecodeConverter.Models
 {
   internal class FpsTimeCode : PropertyChangedBase
   {

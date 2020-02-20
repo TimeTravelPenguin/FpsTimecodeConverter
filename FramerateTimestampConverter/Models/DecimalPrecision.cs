@@ -1,4 +1,4 @@
-﻿namespace FramerateTimestampConverter.WPF.Models
+﻿namespace FpsTimecodeConverter.Models
 {
   internal class DecimalPrecision
   {

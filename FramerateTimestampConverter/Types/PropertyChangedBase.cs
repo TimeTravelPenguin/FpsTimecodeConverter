@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace FramerateTimestampConverter.WPF.Types
+namespace FpsTimecodeConverter.Types
 {
   public abstract class PropertyChangedBase : INotifyPropertyChanged
   {
