@@ -123,7 +123,7 @@ namespace FramerateTimestampConverter.WPF.Models
     {
       DecimalPlacesCollection.Clear();
 
-      for (var i = 1; i < 10; i++)
+      for (var i = 1; i < 6; i++)
       {
         DecimalPlacesCollection.Add(new DecimalPrecision(i));
       }
