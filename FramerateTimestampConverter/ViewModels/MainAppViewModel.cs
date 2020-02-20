@@ -14,7 +14,7 @@ namespace FramerateTimestampConverter.WPF.ViewModels
 
     private static void LaunchGitHub()
     {
-      var url = @"https://www.google.com";
+      var url = @"https://github.com/TimeTravelPenguin/FpsTimecodeConverter";
 
       try
       {
@@ -22,7 +22,6 @@ namespace FramerateTimestampConverter.WPF.ViewModels
       }
       catch
       {
-        // hack because of this: https://github.com/dotnet/corefx/issues/10361
         if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
         {
           url = url.Replace("&", "^&", StringComparison.InvariantCulture);
