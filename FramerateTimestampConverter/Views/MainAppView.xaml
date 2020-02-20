@@ -3,10 +3,10 @@
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
   xmlns:local="clr-namespace:FramerateTimestampConverter.WPF.Views"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:viewModels="clr-namespace:FramerateTimestampConverter.WPF.ViewModels"
-  xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
   Title="FPS Converter"
   ResizeMode="NoResize"
   SizeToContent="WidthAndHeight"
@@ -49,17 +49,17 @@
       RenderTransformOrigin="0.63,0.63">
       <i:Interaction.Triggers>
         <i:EventTrigger EventName="MouseDown">
-          <i:InvokeCommandAction Command="{Binding OpenGitHub}"/>
+          <i:InvokeCommandAction Command="{Binding OpenGitHub}" />
         </i:EventTrigger>
       </i:Interaction.Triggers>
-      
+
       <Image.Source>
         <BitmapImage DecodePixelHeight="112" UriSource="../Icon/lurk.png" />
       </Image.Source>
       <Image.RenderTransform>
         <ScaleTransform ScaleX="-1.7" ScaleY="-1.7" />
       </Image.RenderTransform>
-      
+
     </Image>
 
     <TextBlock
@@ -129,6 +129,7 @@
       Height="20"
       HorizontalAlignment="Left"
       VerticalAlignment="Center"
+      IsReadOnly="True"
       Text="{Binding FpsTime.TimeCode, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
 
 
