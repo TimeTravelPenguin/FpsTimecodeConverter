@@ -6,6 +6,12 @@
     <UseWPF>true</UseWPF>
     <StartupObject>FramerateTimestampConverter.WPF.App</StartupObject>
     <ApplicationIcon>Icon\RedHat.ico</ApplicationIcon>
+    <AssemblyName>FramerateTimestampConverter.WPF</AssemblyName>
+    <Authors>TimeTravelPenguin</Authors>
+    <Product>FPSTimeStampConverter</Product>
+    <PackageId>FPSTimeStampConverter</PackageId>
+    <PackageProjectUrl>https://github.com/TimeTravelPenguin/FpsTimecodeConverter</PackageProjectUrl>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
