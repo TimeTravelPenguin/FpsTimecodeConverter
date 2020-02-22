@@ -4,8 +4,8 @@ Convert your FPS value into an HH:MM:SS:MS format
 ![Application View](/ReadmeImages/MainWindow.png)
 
 ## How to use the application?
+Using the application is easy. First, select:
 #### 1. FPS
-Using the application is easy. First, select your FPS value.
 FPS is the measure of how many times in one second you video preview updates.
 
 #### 2. Precision
@@ -18,7 +18,7 @@ Finally, input either your frame count to calculate a timecode, or input a timec
 to convert it to a frame count. For the latter, you want to be as precise as possible, because if you input
 a framecount that isn't possible, it will round the calculation to the nearest frame.
 
-For example, at 60fps, the timecode will increment in values of 1/60, or 0.01667 (rounded to 5 d.p.).
+For example, at 60fps, the timecode will increment in values of 1/60 seconds, or 0.01667 seconds (rounded to 5 d.p.).
 So, between times 0.01667 and 0.03333, no valid 60fps time exists. In this case, if you do happen to enter
 a non-valid timecode, it will operate as normal, calculate the framecount, and round to the NEAREST integer.
 
