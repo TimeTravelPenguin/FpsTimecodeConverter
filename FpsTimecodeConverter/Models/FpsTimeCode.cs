@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.Text.RegularExpressions;
 using System.Windows;
 using FpsTimecodeConverter.Types;
 
@@ -47,7 +48,11 @@ namespace FpsTimecodeConverter.Models
       }
     }
 
-    public string TimeCode => ConvertToTimecode();
+    public string TimeCode
+    {
+      get => ConvertToTimecode();
+      set => SetTimeCode(value);
+    }
 
     public double Fps
     {
@@ -86,6 +91,26 @@ namespace FpsTimecodeConverter.Models
       DefaultFps = defaultFps;
 
       SetDecimalPlaceChoices();
+    }
+
+    private void SetTimeCode(string timeCode)
+    {
+      var round = SelectedItem.PrecisionValue;
+      var format = "{0:D" + $"{round}" + "}";
+
+      var regSplit = Regex.Split(timeCode, ":");
+      regSplit[3] = "0." + string.Format(CultureInfo.InvariantCulture, format, regSplit[3]);
+
+      var numbers = Array.ConvertAll(regSplit, double.Parse);
+
+      var hour = numbers[0];
+      var min = numbers[1];
+      var sec = numbers[2];
+      var ms = numbers[3];
+
+      var totalSec = 3600 * hour + 60 * min + sec + ms;
+
+      FrameCount = (long) Math.Round(totalSec * Fps, MidpointRounding.AwayFromZero);
     }
 
     private string ConvertToTimecode()
