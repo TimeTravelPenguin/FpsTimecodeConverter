@@ -23,10 +23,9 @@ So, between times 0.01667 and 0.03333, no valid 60fps time exists. In this case,
 a non-valid timecode, it will operate as normal, calculate the framecount, and round to the NEAREST integer.
 
 ## Computer requirement
-This application is designed to be cross-platform.
-Therefore, you will need to have:
-- Windows 10 / macOS / Linux (minimum OS versions vary)
-- Installed the [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/current/runtime) framework
+The necessary system requirements are:
+- Windows 10
+- [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework)
 
 To find out more information regarding minimum OS versions, [you can find more information here](https://docs.microsoft.com/en-us/dotnet/core/install/dependencies)
 
