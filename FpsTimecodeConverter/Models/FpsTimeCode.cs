@@ -1,4 +1,20 @@
-﻿using System;
+﻿#region Title Header
+
+// Name: Phillip Smith
+// 
+// Solution: FpsTimecodeConverter
+// Project: FpsTimecodeConverter
+// File Name: FpsTimeCode.cs
+// 
+// Current Data:
+// 2020-03-01 1:36 PM
+// 
+// Creation Date:
+// 2020-03-01 1:24 PM
+
+#endregion
+
+using System;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -61,7 +77,13 @@ namespace FpsTimecodeConverter.Models
       {
         if (value <= 0)
         {
-          MessageBox.Show("FPS must be a positive integer", "FPS cannot be zero");
+          MessageBox.Show("FPS must be a positive integer", "FPS cannot be less than zero");
+          value = DefaultFps;
+        }
+
+        if (value > 10000)
+        {
+          MessageBox.Show("I doubt you need to go beyond 10k fps", "FPS cannot be greater than 10,000");
           value = DefaultFps;
         }
 
